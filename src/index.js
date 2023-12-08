@@ -1,1 +1,3 @@
-console.log('This is a test')
+import initLoad from "./modules/home";
+
+initLoad();
