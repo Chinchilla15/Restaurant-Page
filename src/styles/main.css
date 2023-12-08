@@ -1,0 +1,11 @@
+body{
+    --black-color: #1B1B1B;
+    --white-color: #F5F5F5;
+    font-family: 'Varela Round', sans-serif;
+    background: url(../images/background.jpg) ;
+    background-size: 100%;
+}
+
+header{
+    color: var(--white-color)
+}
