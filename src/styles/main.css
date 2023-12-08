@@ -1,11 +1,40 @@
+@import url(./color.css);
+
 body{
-    --black-color: #1B1B1B;
-    --white-color: #F5F5F5;
     font-family: 'Varela Round', sans-serif;
-    background: url(../images/background.jpg) ;
-    background-size: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background:url(../images/Coffee.png),
+               url(../images/background.png) ;
 }
 
 header{
-    color: var(--white-color)
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 52px;
+    margin: 0;
+}
+
+#content{
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main{
+    height: 50rem;
+    width: 40rem;
+    border-radius: 20px;
+    background-color: var(--primary-color);
 }
