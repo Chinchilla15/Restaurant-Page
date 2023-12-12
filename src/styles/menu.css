@@ -1,0 +1,34 @@
+@import url(./color.css);
+
+.menuDiv{
+    width: 85%;
+    height: 90%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 40px repeat(2,1fr) 40px repeat(2,1fr);
+    background-color: var(--black-color);
+    align-items: center;
+    justify-items: center;
+}
+
+.hotDrink,
+.coldDrink{
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+
+.hotDrink{
+    grid-area: 1/1/2/4;
+}
+
+.coldDrink{
+    grid-area: 4/1/5/4;
+}
+
+.menuItem{
+    text-align: center;
+    height: 80%;
+    width: 80%;
+    background-color: white;
+}
