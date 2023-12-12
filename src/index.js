@@ -1,7 +1,9 @@
 import initLoad from "./modules/home";
-import renderMenuTabenuTab from "./modules/menu";
+import renderMenuTab from "./modules/menu";
 import renderAboutTab from "./modules/about";
 import './styles/main.css';
+import './styles/menu.css'
+
 
 initLoad();
  
@@ -27,14 +29,17 @@ function initializeTabs() {
     homeTab.addEventListener('click', () => {
         const wholeContent = document.querySelector('#content');
 
-        if (mainContent.innerHTML === "") {
-            wholeContent.innerHTML = "";
-            initLoad(); 
+        wholeContent.innerHTML = "";
+        initLoad(); 
 
-            // Reinitialize the tabs and their event listeners
-            initializeTabs();
-        };
+        // Reinitialize the tabs and their event listeners
+        initializeTabs();
+    
     });
+
+    menuTab.addEventListener('click',()=>{
+       renderMenuTab();
+    })
 };
 
 // Initialize tabs and their event listeners
