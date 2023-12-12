@@ -107,28 +107,65 @@ main{
 
 article{
     flex-direction: column;
-    color: white;
+  
     width: 80%;
 }
 
 .mainText{
     font-size: 48px;
     font-weight: 700;
-    color: white;
+    background: linear-gradient(var(--white-color) -20%, #CA965C);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .subText1{
     font-weight: 500;
     font-size: 32px;
+    background: linear-gradient(to right,var(--white-color)25%, #87805E 65%);
+    text-wrap: nowrap;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttonBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 20rem;
+    height: 8rem;
+ 
+}
+
+.articleButton{
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    height: 2.5rem;
+    width: 8rem;
+    color: var(--white-color);
+    background: #87805E;
+    transition: transform .2s; 
+}
+
+.articleButton:hover{
+    transform: scale(1.08);
+    box-shadow:
+    0 0 0.5rem #CA965C,
+    inset 0 0 0 #CA965C;
 }
 
 .subText2{
     font-weight: 400;
     font-size: 24px;
+    background: linear-gradient(to top,var(--white-color), #C8AE7D);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 footer{
     width: 100%;
     height: 6rem;
-    background: linear-gradient(to top, rgba(0, 0, 0) 30%, rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0) , rgba(0, 0, 0, 0));
 }
