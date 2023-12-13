@@ -22,7 +22,7 @@ export default function renderMenuTab(){
        { name: 'Vanilla Iced Latte', description: 'Iced latte with vanilla syrup and milk over ice', price: '$4.25' },
        { name: 'Cold Brew with Cream', description: 'Smooth cold brew coffee with a touch of cream', price: '$3.50' },
        { name: 'Iced Caramel Macchiato', description: 'Iced espresso with milk, vanilla syrup, and caramel drizzle', price: '$4.50' },
-       { name: 'Peppermint Mocha Cold Brew', description: 'Cold brew with peppermint syrup, chocolate, and whipped cream', price: '$4.50' },
+       { name: 'Frapuccino', description: 'Blended coffee delight with ice, milk, and your choice of flavor.', price: '$4.50' },
        { name: 'Almond Milk Cold Brew', description: 'Cold brew coffee with almond milk', price: '$4.00' },
     ];
 
@@ -34,6 +34,10 @@ export default function renderMenuTab(){
     const itemName = document.createElement('p');
     const itemDescription = document.createElement('p');
     const itemPrice = document.createElement('p');
+
+    itemName.classList.add('itemName');
+    itemDescription.classList.add('itemDescription');
+    itemPrice.classList.add('itemPrice');
 
     const menuItemData = menuItems[i];
     itemName.innerHTML = menuItemData.name;
