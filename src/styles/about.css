@@ -1,1 +1,34 @@
 @import url(./color.css);
+
+.mainDiv{
+    display: grid;
+    grid-template-rows: 50px 120px 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    height: 90%;
+    width: 90%;
+    color: white;    
+}
+
+.mainDiv > h3{
+    grid-area: 1/1/2/3;
+    text-align: center;
+}
+
+.aboutText{
+    grid-area: 2/1/3/3;
+}
+
+.hours{
+    grid-area: 3/1/4/2;
+    text-align: center;
+}
+
+.location{
+    grid-area: 3/2/4/3;
+}
+
+.creator{
+    grid-area: 4/1/5/3;
+    text-align: center;
+    align-self: center;
+}
