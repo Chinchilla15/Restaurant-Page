@@ -1,9 +1,10 @@
 import initLoad from "./modules/home";
 import renderMenuTab from "./modules/menu";
 import renderAboutTab from "./modules/about";
+import renderCoworkingTab from "./modules/coworking";
 import './styles/main.css';
-import './styles/menu.css'
-
+import './styles/menu.css';
+import './styles/about.css';
 
 initLoad();
  
@@ -12,17 +13,14 @@ function initializeTabs() {
     const homeTab = document.querySelector('.homeTab');
     const menuTab = document.querySelector('.menuTab');
     const aboutTab = document.querySelector('.aboutTab');
+    const coworkingTab = document.querySelector('.coworkingTab')
     const mainContent = document.querySelector('main');
 
     tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            console.log(`Clicked on ${tab.textContent}`);
-           
+        tab.addEventListener('click', () => {         
             if (tab !== homeTab) {
                 mainContent.innerHTML = ''; 
             };
-
-            // Add logic to load content for each tab 
         });
     });
 
@@ -34,24 +32,20 @@ function initializeTabs() {
 
         // Reinitialize the tabs and their event listeners
         initializeTabs();
-    
     });
 
     menuTab.addEventListener('click',()=>{
        renderMenuTab();
-    })
+    });
+
+    aboutTab.addEventListener('click',()=>{
+        renderAboutTab();
+    });
+
+    coworkingTab.addEventListener('click',()=>{
+        renderCoworkingTab();
+    });
 };
 
 // Initialize tabs and their event listeners
 initializeTabs();
-
-/*
-menuTab.addEventListener('click',()=>{
-    mainContent.innerHTML = ""
-    console.log('test')
-})
-
-aboutTab.addEventListener('click',()=>{
-    mainContent.innerHTML = ""
-})
-*/
