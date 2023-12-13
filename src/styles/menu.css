@@ -1,11 +1,11 @@
 @import url(./color.css);
 
 .menuDiv{
-    width: 85%;
+    width: 80%;
     height: 90%;
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    grid-template-rows: 40px repeat(2,1fr) 40px repeat(2,1fr);
+    grid-template-rows: 40px repeat(2,1fr) 30px repeat(2,1fr);
     background-color: var(--black-color);
     align-items: center;
     justify-items: center;
@@ -15,7 +15,8 @@
 .coldDrink{
     font-size: 32px;
     text-align: center;
-    color: white;
+    color: var(--light-brown);
+    font-style: italic;
 }
 
 .hotDrink{
