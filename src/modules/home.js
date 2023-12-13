@@ -24,13 +24,13 @@ export default function initLoad(){
     homeTab.classList.add('tab', 'homeTab');
     menuTab.classList.add('tab', 'menuTab');
     aboutTab.classList.add('tab', 'aboutTab');
-    locationTab.classList.add('tab', 'locationTab');
+    locationTab.classList.add('tab', 'coworkingTab');
     mainText.classList.add('mainText');
     subText1.classList.add('subText1');
     subText2.classList.add('subText2');
     buttonBox.classList.add('buttonBox');
-    menuButton.classList.add('articleButton');
-    infoButton.classList.add('articleButton');
+    menuButton.classList.add('articleButton', 'menuButton');
+    infoButton.classList.add('articleButton', 'aboutButton');
 
     title.innerHTML = "Nitro Coffee";
     description.innerHTML = "Coffee Shop & Co-Working Space";
@@ -38,7 +38,7 @@ export default function initLoad(){
     homeTab.innerHTML = "HOME";
     menuTab.innerHTML = "MENU";
     aboutTab.innerHTML = "ABOUT";
-    locationTab.innerHTML = "LOCATION";
+    locationTab.innerHTML = "CO-WORKING";
 
     mainText.innerHTML = "You don't have to stay home <br> to feel like home.";
     subText1.innerHTML = "Visit our unique space and let your creativity flow. You bring the ideas, we provide the energy.";
