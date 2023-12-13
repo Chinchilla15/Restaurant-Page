@@ -99,6 +99,11 @@ ul{
     transform: scaleX(1);
 }
 
+.tab.active::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
 main{
     flex-direction: column;
     height: 100%;
@@ -139,7 +144,7 @@ article{
 }
 
 .articleButton{
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 8px;
     border-style: none;
     height: 2.5rem;
@@ -147,6 +152,7 @@ article{
     color: var(--white-color);
     background: #87805E;
     transition: transform .2s; 
+    cursor: pointer;
 }
 
 .articleButton:hover{
