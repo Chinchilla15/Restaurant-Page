@@ -11,7 +11,7 @@ export default function renderAboutTab(){
     const location = document.createElement('p');
     const creatorDiv = document.createElement('section');
     
-    mainDiv.classList.add('mainDiv');
+    mainDiv.classList.add('mainAboutDiv');
     aboutText.classList.add('aboutText');
     hoursDiv.classList.add('hours');
     locationDiv.classList.add('location');

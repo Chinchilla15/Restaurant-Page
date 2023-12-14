@@ -1,34 +1,95 @@
 @import url(./color.css);
 
-.mainDiv{
+.mainAboutDiv{
     display: grid;
-    grid-template-rows: 50px 120px 1fr 1fr;
+    grid-template-rows: 60px 120px 400px 100px;
     grid-template-columns: repeat(2, 1fr);
-    height: 90%;
+    height: 95%;
     width: 90%;
-    color: white;    
+    color: var(--white-color);    
 }
 
-.mainDiv > h3{
+.mainAboutDiv > h3{
     grid-area: 1/1/2/3;
     text-align: center;
+    align-self: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family:'Orbitron', sans-serif;
+    margin: 0;
+    color: var(--light-brown);
+}
+
+.mainAboutDiv > p{
+    grid-area: 2/1/3/3;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    justify-self: center;
 }
 
 .aboutText{
     grid-area: 2/1/3/3;
 }
 
+.hours,
+.location{
+    margin-top: 20px;
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    justify-self: center;
+    text-align: center;
+}
+
 .hours{
     grid-area: 3/1/4/2;
-    text-align: center;
 }
 
 .location{
     grid-area: 3/2/4/3;
+    align-self: center;
+    height: 100%;
+}
+
+.hours:hover,
+.location:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hours > h4{
+    font-size: 24px;
+}
+
+.hours > p {
+    margin: 12px;
+    font-size: 20px;
+}
+
+.location > h4{
+    font-size: 24px;
+}
+
+.location > p{
+    margin-top: 20%;
+    color: red;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
 }
 
 .creator{
     grid-area: 4/1/5/3;
     text-align: center;
-    align-self: center;
+    align-self: end;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a:hover{
+    color: var(--black-color);
 }
