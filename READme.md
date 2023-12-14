@@ -4,7 +4,7 @@ Restaurant page project from The Odin Project - Part of the Javascript Course. 1
 
 Page created using ES6 Modules and Webpack. Using only HTML, CSS and Vanilla JavaScript. 
 
-- Live Site URL: [Library](https://chinchilla15.github.io/Restaurant-Page/)
+- Live Site URL: [Nitro Coffee](https://chinchilla15.github.io/Restaurant-Page/)
 
 ### 🛠️ Built with
 
