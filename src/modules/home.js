@@ -42,7 +42,7 @@ export default function initLoad(){
 
     mainText.innerHTML = "You don't have to stay home <br> to feel like home.";
     subText1.innerHTML = "Visit our unique space and let your creativity flow. You bring the ideas, we provide the energy.";
-    subText2.innerHTML = "Quote";
+    subText2.innerHTML = "This is the beginning of loving yourself, welcome home.";
     menuButton.innerHTML = "Menu";
     infoButton.innerHTML = "Learn More";
     
@@ -57,5 +57,4 @@ export default function initLoad(){
     buttonBox.append(menuButton,infoButton)
 
     content.append(header, main, footer);
-
 }

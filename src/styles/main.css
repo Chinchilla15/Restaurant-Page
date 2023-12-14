@@ -163,11 +163,14 @@ article{
 }
 
 .subText2{
+    width: 100%;
+    text-align: center;
     font-weight: 400;
-    font-size: 24px;
-    background: linear-gradient(to top,var(--white-color), #C8AE7D);
+    font-size: 28px;
+    background: linear-gradient(to top,var(--white-color) , #C8AE7D 60%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-style: italic;
 }
 
 footer{
