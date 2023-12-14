@@ -6,8 +6,6 @@ export default function renderMenuTab(){
     const hotDrink = document.createElement('p');
     const coldDrink = document.createElement('p');
     
-    let items = 12;
-
     const menuItems = [
        // Hot Brews
        { name: 'Classic Americano', description: 'A single or double shot of espresso with hot water', price: '$2.50' },
@@ -25,9 +23,8 @@ export default function renderMenuTab(){
        { name: 'Frapuccino', description: 'Blended coffee delight with ice, milk, and your choice of flavor.', price: '$4.50' },
        { name: 'Almond Milk Cold Brew', description: 'Cold brew coffee with almond milk', price: '$4.00' },
     ];
-
     
-    for(let i = 0; i < items; i++) {
+    for(let i = 0; i < 12; i++) {
     const menuItem = document.createElement("div");
     menuItem.classList.add('menuItem');
 
@@ -49,18 +46,16 @@ export default function renderMenuTab(){
     menuItem.appendChild(itemPrice);
 
     menuDiv.appendChild(menuItem);
-    }   
+    };
     
-
     menuDiv.classList.add('menuDiv');
     hotDrink.classList.add('hotDrink');
     coldDrink.classList.add('coldDrink');
 
     hotDrink.innerHTML = 'Hot Drinks';
-    coldDrink.innerHTML = 'Cold Drinks'
+    coldDrink.innerHTML = 'Cold Drinks';
 
-    menuDiv.append(hotDrink,coldDrink)
+    menuDiv.append(hotDrink,coldDrink);
 
     mainContent.appendChild(menuDiv);
-
-}
+};

@@ -23,12 +23,12 @@
 
 .hotDrink{
     grid-area: 1/1/2/4;
-    background: linear-gradient(to right, transparent 0%, transparent 30%, #9A3B3B 50%, transparent 70%, transparent 100%);
+    background: linear-gradient(to right, transparent 0%, transparent 30%, var(--primary-color) 50%, transparent 70%, transparent 100%);
 }
 
 .coldDrink{
     grid-area: 4/1/5/4;
-    background: linear-gradient(to right, transparent 0%, transparent 30%, #4B6587 50%, transparent 70%, transparent 100%);
+    background: linear-gradient(to right, transparent 0%, transparent 30%, var(--primary-color) 50%, transparent 70%, transparent 100%);
 }
 
 .menuItem{
